@@ -8,8 +8,8 @@ import java.sql.*;
 public class Main {
     private Connection connection = null;
     private static Main instance = null;
-    String url = "jdbc:mysql://localhost:3306/hospital_system"; // database string url
-    String username = "root"; // your database user
+    String url = ""; // database string url
+    String username = ""; // your database user
     String password = ""; // your database password
 
     public static void main(String[] args) throws SQLException, ClassNotFoundException, IOException {
@@ -17,9 +17,9 @@ public class Main {
 
         Main db = Main.getInstance();
 
-        db.readPersonFile("C:\\Users\\ctreb\\IdeaProjects\\Checkpoint3\\src\\com\\company\\person.txt");
-        db.readTreatmentFile("C:\\Users\\ctreb\\IdeaProjects\\Checkpoint3\\src\\com\\company\\treatment.txt");
-        db.readAdditionalDoctorFile("C:\\Users\\ctreb\\IdeaProjects\\Checkpoint3\\src\\com\\company\\additionaldoctor.txt");
+        db.readPersonFile("C:\\Users\\ctreb\\IdeaProjects\\src\\com\\company\\person.txt");
+        db.readTreatmentFile("C:\\Users\\ctreb\\IdeaProjects\\src\\com\\company\\treatment.txt");
+        db.readAdditionalDoctorFile("C:\\Users\\ctreb\\IdeaProjects\\src\\com\\company\\additionaldoctor.txt");
 
     }
 
